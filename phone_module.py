@@ -1,20 +1,25 @@
 #!/usr/bin/python
-import serial
 from engine import TextWriter
+from engine import SystemState
 import os
 import time
+import serial
 
 """
 Module: phone_module
 Location: applications/phone/phone_module.py
 """
-def Init(SystemState):
+
+class PhoneState(object):
+    pass
+
+def Init():
   # Setup variables used by the phone app.
+  SystemState.PhoneState = PhoneState
+  
   SystemState.pressed_buttons = ''
-  SystemState.incomming_number = None
   SystemState.pressed_button = None
   SystemState.battery_life = None 
-  SystemState.FONA_time = None 
   
   # Start serial port and listen. Place anything it finds in the system queue.
   serial_port = serial.Serial("/dev/ttyAMA0", 115200, timeout=0.5)
@@ -52,9 +57,8 @@ def Init(SystemState):
 
   # TODO: Learn about FONA commands to test for signal, etc.
   SystemState.serial_port = serial_port
-  return SystemState
 
-def Process(SystemState):
+def Process():
   button = str(SystemState.pressed_button)
   pygame = SystemState.pygame
   screen = SystemState.screen
@@ -119,9 +123,8 @@ def Process(SystemState):
         text=SystemState.pressed_buttons,
         text_type = 'top'
     )
-  return SystemState
 
-def Thread(SystemState):
+def Thread():
   serial_port = SystemState.serial_port
   battery_checked = False
   # Infinite loop to pass found messages to InterruptSystem() in cobblr. 
