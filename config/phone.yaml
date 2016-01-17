@@ -23,6 +23,7 @@ screen-modes:
     hash: [5, 6.25]
     call: [3.5, 7.5]
     delete: [5.5, 7.5]
+    go_back: [1.5, 7.5]
   2:
     hangup: [3.5, 7.5]
   3: 
