@@ -1,14 +1,19 @@
 #!/usr/bin/python
 from engine import TextWriter
 from engine import SystemState
+from engine import Utilities
+from engine import Menu
 import os
 import time
 import serial
+import signal
 
 """
 Module: phone_module
 Location: applications/phone/phone_module.py
 """
+
+signal.signal(signal.SIGINT, Utilities.GracefulExit)
 
 class PhoneState(object):
     pass
@@ -64,6 +69,7 @@ def Process():
   screen = SystemState.screen
   serial_port = SystemState.serial_port
   
+
   if button == 'delete':
     SystemState.pressed_buttons = SystemState.pressed_buttons[:-1]
     TextWriter.Write(
@@ -71,6 +77,9 @@ def Process():
         text=SystemState.pressed_buttons,
         text_type = "top"
     )
+  
+  elif button == 'go_back':
+    Menu.Back()
   elif button == 'call':
     if SystemState.screen_mode == 1:
       SystemState.next_screen_mode = 2
