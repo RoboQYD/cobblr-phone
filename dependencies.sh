@@ -1,1 +1,1 @@
-aptitude install python-serial
+aptitude -f install python-serial
