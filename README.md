@@ -10,14 +10,14 @@ Here's a list of hardware necessary to make the phone work:
  - 1 [(Optional) Adafruit Powerboost 1000C](https://www.adafruit.com/products/2465)
  - 1 [(Optional) Adafruit Lipo Battery 2500mAh](https://www.adafruit.com/products/328)
  
- The phone software is based on Dave Hunt's [PiPhone](http://www.davidhunt.ie/piphone-a-raspberry-pi-based-smartphone). The wiring is the same, and it can be found [here](https://learn.adafruit.com/piphone-a-raspberry-pi-based-cellphone/pi-setup?view=all). I was inspired by Dave's work, and wanted to add some features. I ended up writing a small framework around the core of the code. Some of Cobblr's improvements include:
+The phone software is based on Dave Hunt's [PiPhone](http://www.davidhunt.ie/piphone-a-raspberry-pi-based-smartphone). The wiring is the same, and it can be found [here](https://learn.adafruit.com/piphone-a-raspberry-pi-based-cellphone/pi-setup?view=all). I was inspired by Dave's work, and wanted to add some features. I ended up writing a small framework around the core of the code. Some of Cobblr's improvements include:
  
  - It's faster.
  - It can receive calls.
  - The framework itself supports multiple apps.
  - It can be extended a bit easier.
  
- Still, Dave inspired me, so I want to make sure I mention him. I wouldn't have thought of it on my own.
+Dave inspired me, so I want to make sure I mention him. I wouldn't have thought of it on my own.
 
 # How to Install
 
