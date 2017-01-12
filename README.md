@@ -1,22 +1,38 @@
-![alt tag](https://raw.githubusercontent.com/TheQYD/cobblr-phone/master/phone.png)
+A Phone application for written for the [Cobblr framework](http://github.com/TheQYD/cobblr).
 
-**Description:** This is the phone application written for the RPI's cobblr software.
+![PiPhone](https://raw.githubusercontent.com/TheQYD/cobblr/master/photos/cobblr_phone.jpg)
 
-**Requirements**
- 1. Raspberry Pi (https://www.adafruit.com/products/2358)
- 2. Adafruit 2.8in PiTFT (https://www.adafruit.com/products/1601)
- 3. Raspberry Pi Camera (https://www.adafruit.com/products/1367)
- 4. USB Microphone Dongle (http://www.amazon.com/Super-Microphone-Adapter-Driver-Notebook/dp/B00M3UJ42A)
- 5. The cobblr software (https://github.com/RoboQYD/cobblr)
- 6. (Optional) Adafruit Powerboost 1000C (https://www.adafruit.com/products/2465)
- 7. (Optional) Adafruit Lipo Battery 500mAh (https://www.adafruit.com/products/1578)
+# Hardware
+Here's a list of hardware necessary to make the phone work:
 
-**Installation**
- 1. Clone the repository.
- 2. Enter the cobblr-phone directory.
- 3. Run "setup.py install (path)" where (path) is the location of the cobblr folder.
- 4. Enter the cobblr/config directory.
- 5. Open "cobblr.yaml" and add "-phone" to the list of applications.
- 6. Run cobblr.
+ 1 [Raspberry Pi](https://www.adafruit.com/products/2358)
+ 1 [Adafruit 2.8in PiTFT](https://www.adafruit.com/products/1601)
+ 1 [(Optional) Adafruit Powerboost 1000C](https://www.adafruit.com/products/2465)
+ 1 [(Optional) Adafruit Lipo Battery 2500mAh](https://www.adafruit.com/products/328)
+ 
+ The phone software is based on Dave Hunt's [PiPhone](http://www.davidhunt.ie/piphone-a-raspberry-pi-based-smartphone). The wiring is the same, and it can be found [here](https://learn.adafruit.com/piphone-a-raspberry-pi-based-cellphone/pi-setup?view=all). I was inspired by Dave's work, and wanted to add some features. I ended up writing a small framework around the core of the code. Some of Cobblr's improvements include:
+ 
+ - It's faster.
+ - It can receive calls.
+ - The framework itself supports multiple apps.
+ - It can be extended a bit easier.
+ 
+ Still, Dave inspired me, so I want to make sure I mention him. I wouldn't have thought of it on my own.
 
+# How to Install
 
+Follow the directions to install the [Cobblr framework](http://github.com/TheQYD/cobblr). Then, execute this command:
+
+```
+sudo cobblr install cobblr-phone
+```
+
+# Notes
+
+Other applications were made to work with the phone:
+
+- [cobblr-calculator](http://gihub.com/TheQYD/cobblr-calculator)
+- [cobblr-music](http://gihub.com/TheQYD/cobblr-calculator)
+
+# License
+PiPhone is available under the MIT license. See the LICENSE file for more info. Make it better!
