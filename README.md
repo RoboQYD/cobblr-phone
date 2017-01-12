@@ -21,18 +21,15 @@ Here's a list of hardware necessary to make the phone work:
 
 # How to Install
 
-Follow the directions to install the [Cobblr framework](http://github.com/TheQYD/cobblr). Then, execute this command:
+Follow the directions to install the [Cobblr framework](http://github.com/TheQYD/cobblr). The PiTFT should be configured in portrait mode (no rotation). Once that's finished, and the framework is installed, execute this command:
 
 ```
 sudo cobblr install cobblr-phone
 ```
+
 # More
 
-Though not required, I've made a polycarbonate and aluminum body for it. The CADs are avaliable [here](https://github.com/TheQYD/CAD/tree/master/cobblr-phone).
-
-# Notes
-
-Other applications were made to work with the phone:
+Though not required, I've made a polycarbonate and aluminum body for it. The CADs are avaliable [here](https://github.com/TheQYD/CAD/tree/master/cobblr-phone). Other applications were made to work with the cobblr-phone:
 
 - [cobblr-calculator](http://gihub.com/TheQYD/cobblr-calculator)
 - [cobblr-music](http://gihub.com/TheQYD/cobblr-calculator)
