@@ -26,6 +26,9 @@ Follow the directions to install the [Cobblr framework](http://github.com/TheQYD
 ```
 sudo cobblr install cobblr-phone
 ```
+# More
+
+Though not required, I've made a polycarbonate and aluminum body for it. The CADs are avaliable [here](https://github.com/TheQYD/CAD/tree/master/cobblr-phone).
 
 # Notes
 
