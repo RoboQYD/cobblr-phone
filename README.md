@@ -5,10 +5,10 @@ A Phone application for written for the [Cobblr framework](http://github.com/The
 # Hardware
 Here's a list of hardware necessary to make the phone work:
 
- 1 [Raspberry Pi](https://www.adafruit.com/products/2358)
- 1 [Adafruit 2.8in PiTFT](https://www.adafruit.com/products/1601)
- 1 [(Optional) Adafruit Powerboost 1000C](https://www.adafruit.com/products/2465)
- 1 [(Optional) Adafruit Lipo Battery 2500mAh](https://www.adafruit.com/products/328)
+ - 1 [Raspberry Pi](https://www.adafruit.com/products/2358)
+ - 1 [Adafruit 2.8in PiTFT](https://www.adafruit.com/products/1601)
+ - 1 [(Optional) Adafruit Powerboost 1000C](https://www.adafruit.com/products/2465)
+ - 1 [(Optional) Adafruit Lipo Battery 2500mAh](https://www.adafruit.com/products/328)
  
  The phone software is based on Dave Hunt's [PiPhone](http://www.davidhunt.ie/piphone-a-raspberry-pi-based-smartphone). The wiring is the same, and it can be found [here](https://learn.adafruit.com/piphone-a-raspberry-pi-based-cellphone/pi-setup?view=all). I was inspired by Dave's work, and wanted to add some features. I ended up writing a small framework around the core of the code. Some of Cobblr's improvements include:
  
